@@ -1,0 +1,104 @@
+GO for MicroServices and Oracles
+a.k.a. hacking the blockchain
+20 Jun 2019
+Tags: Ethereum, Solidity, Smart Contracts, Golang, Gophercon India 
+
+Dave Appleton
+Lead blockchain developer, HelloGold
+https://hellogold.com
+Twitter  @AppletonDave
+
+* HelloGold? - Some background
+.background images/GOOGLE-02.png
+- Roots in the 1997 South East Asian Currency crisis
+- Inspiration from SPDR GLD from World Gold Council
+- HelloGold Started in 2015
+- Launched late 2016
+- Currently serving about 25,000 people in Malaysia and Thailand
+
+* What we were building...
+.background images/GOOGLE-02.png
+.image images/architecture.jpg 500 _
+
+* Oracles and Event Monitors
+.background images/GOOGLE-02.png
+
+- Blockchains do not communicate!
+- Transactions in, Events out
+- Oracles
+
+.image images/transaction_small.png 100 _
+
+- Event Monitors
+.image images/eventlog.png 150 _
+
+* The GETH client
+.background images/GOOGLE-02.png
+.image images/geth.png 350 _
+
+
+* Why Go?
+.background images/GOOGLE-02.png
+.image images/the-go.jpg
+
+* Why Go?
+.background images/GOOGLE-02.png
+.image images/demand.png 500 _
+
+* Why Go?
+.background images/GOOGLE-02.png
+.image images/pay.png 300 _
+
+Source : https://lvivity.com/top-highly-paid-programming-languages
+
+* What projects use Go?
+.background images/GOOGLE-02.png
+
+- Docker
+- Kubernetes
+- Uber
+- Grab
+- Netxflix
+- Dropbox
+- Ethereum
+- Hyperledger
+- HelloGold
+- and a whole load more
+
+* What makes Go special?
+.background images/GOOGLE-02.png
+- a systems language from Google
+- emphasis on readability & maintainability
+- strongly typed
+- compiled to native code 
+- cross platform / cross compile
+- huge library support only compiled in whan needed
+- amazing developer community
+- the cutest logo ever
+.image images/gophercons.png 100 _
+
+* Blockchains are immutable...
+.background images/GOOGLE-02.png
+
+- not suitable for "move fast and break things"
+- better idea to prototype first and "blockchain it" later
+- decided to build first iteration using traditional design acting like an API
+- keep as close to a blockchain concept as possible
+- replace oracles with microservices
+
+
+* Advantage of MicroServices ?
+.background images/GOOGLE-02.png
+
+- flexibility - deploy same product in different markets with different partners
+- each microservice is very small. We can have many services running on a small cloud instance.
+- Easily tested due to minimalist design.
+
+_Microservices_
+- Single task programs
+- Allows flexiblity by abstracting externalities from core system
+
+* Where to find out more
+
+- my Gophercon India 2018 workshop slides
+https://talks.godoc.org/github.com/DaveAppleton/Gophercon_in/.workshop.slide#1
