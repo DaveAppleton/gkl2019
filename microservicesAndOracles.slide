@@ -98,7 +98,34 @@ _Microservices_
 - Single task programs
 - Allows flexiblity by abstracting externalities from core system
 
+* Key features of a Microservice
+.background images/GOOGLE-02.png
+
+- Scheduler (or cron)
+- Acquires data from external Source
+- Encodes Data in JSON format
+- Adds authorisation credentials
+- https POST
+
+* Oracle architectures
+.background images/GOOGLE-02.png
+
+_Core_ _features_
+
+- Get data from external Source
+- Encode into transaction
+- Sign Transaction & post to blockchain
+
+_Activation_
+- Scheduled
+- OnDemand (response to events)
+
+_Destination_
+- To target contract
+- Lighthouse contract
+
 * Where to find out more
+.background images/GOOGLE-02.png
 
 - my Gophercon India 2018 workshop slides
 https://talks.godoc.org/github.com/DaveAppleton/Gophercon_in/.workshop.slide#1
