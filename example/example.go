@@ -10,6 +10,7 @@ import (
 
 	"github.com/DaveAppleton/etherUtils"
 	"github.com/DaveAppleton/ether_go/ethKeys"
+
 	"github.com/ethereum/go-ethereum/accounts/abi/bind"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/ethclient"
@@ -42,7 +43,7 @@ func main() {
 	if !ok {
 		log.Fatal("3 Cannot get val from ", s64)
 	}
-	client, err := ethclient.Dial("https://kovan.infura.io/v3/2c954d83bea043f48d5ac6b70fa3b7b0")
+	client, err := ethclient.Dial("https://kovan.infura.io/v3/2c954d83bea043f48d5ac6b70fa3b7b0") // This runs on a test net - not real money
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -56,11 +57,11 @@ func main() {
 	if err != nil {
 		log.Fatal("5", err)
 	}
-	log.Println("handler ", payer.PublicKeyAsHexString())
+	log.Println("handler ", payer.PublicKeyAsHexString()) // you will need test ether in this account
 	ownerTx := bind.NewKeyedTransactor(payer.GetKey())
 	tx, err := light.Write(ownerTx, val)
 	if err != nil {
 		log.Fatal("6", err)
 	}
-	fmt.Println("https://kovan.etherscan.io/tx/" + tx.Hash().Hex())
+	fmt.Println("https://kovan.etherscan.io/tx/" + tx.Hash().Hex()) // click this link to see transaction details
 }
